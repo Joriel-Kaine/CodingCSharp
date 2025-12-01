@@ -1,3 +1,3 @@
 # CodingCSharp
-Repositorio para el módulo de programación en DAW
+Repositorio para programación en el lenguaje C#
 - Manuel MR
