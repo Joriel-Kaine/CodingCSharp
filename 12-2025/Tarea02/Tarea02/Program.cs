@@ -40,8 +40,7 @@
 
         static int DevolverAbsoluto(int num)
         {
-            int absoluto;
-            return absoluto = num > 0 ? num : -num;
+            return num > 0 ? num : -num;
         }
 
         static void Main(string[] args)
@@ -50,7 +49,7 @@
                               "══════════════════════════\n\n");
 
             int num;
-            string respuesta = "";
+            string respuesta;
 
             do
             {
