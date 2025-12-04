@@ -36,10 +36,11 @@ namespace Tarea01
             return esPar;
         }
 
-        static bool ContinuarPeticiones(string pregunta)
+        static bool ContinuarPeticiones(string mensaje)
         {
-            bool esCorrecto = false;
+            bool esCorrecto;
 
+            /*
             if (pregunta == "S" || pregunta == "s")
             {
                 esCorrecto = true;
@@ -50,6 +51,13 @@ namespace Tarea01
             }
 
             return esCorrecto;
+            */
+
+            esCorrecto = (mensaje == "S" || mensaje == "s") ? true
+                       : (mensaje == "N" || mensaje == "n") ? false
+                       : false;
+
+            return esCorrecto;
         }
 
         static void Main(string[] args)
@@ -58,7 +66,7 @@ namespace Tarea01
                               "═════════════════════════\n\n");
 
             int num;
-            string pregunta;
+            string mensaje;
 
             do
             {
@@ -76,19 +84,19 @@ namespace Tarea01
                 do
                 {
                     Console.Write("\n¿Desesas introducir otro valor? (S/N): ");
-                    pregunta = Console.ReadLine();
+                    mensaje = Console.ReadLine();
 
-                    if ((pregunta != "S" && pregunta != "s") &&
-                        (pregunta != "N" && pregunta != "n"))
+                    if ((mensaje != "S" && mensaje != "s") &&
+                        (mensaje != "N" && mensaje != "n"))
                     {
                         Console.WriteLine("\nDebes introducir \"S\" o \"N\"");
                     }
 
-                } while ((pregunta != "S" && pregunta != "s") &&
-                        (pregunta != "N" && pregunta != "n"));
+                } while ((mensaje != "S" && mensaje != "s") &&
+                        (mensaje != "N" && mensaje != "n"));
 
 
-            } while (ContinuarPeticiones(pregunta));
+            } while (ContinuarPeticiones(mensaje));
 
             Console.WriteLine("\n\nPulsa una tecla para salir...");
             Console.ReadKey();

@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\nC# - Tarea 4: Manuel MR ®\n" +
+            Console.WriteLine("\nC# - Tarea 5: Manuel MR ®\n" +
                               "═════════════════════════\n\n");
 
             int num, mayor = 0, menor = 0, contador = 0, suma = 0;
